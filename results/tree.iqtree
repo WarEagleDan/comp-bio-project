@@ -1,0 +1,151 @@
+IQ-TREE 3.1.4 built Sep 29 2026
+
+Input file name: data/sars-cov-2.fasta
+Type of analysis: tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Piyumal Demotte, Hector Banos,
+Andrew J. Roger, Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman,
+Matthew W. Hahn, Mario dos Reis, Le Sy Vinh, Gavin Huttley, Robert Lanfear, Bui Quang Minh (2026)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Molecular Biology and Evolution, msag117.
+https://doi.org/10.1093/molbev/msag117
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 24 sequences with 29903 nucleotide sites
+Number of constant sites: 29648 (= 99.1472% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29648 (= 99.1472% of all sites)
+Number of parsimony informative sites: 138
+Number of distinct site patterns: 182
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 4.3180
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 4.3180
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2995
+  pi(C) = 0.1833
+  pi(G) = 0.196
+  pi(T) = 0.3212
+
+Rate matrix Q:
+
+  A   -0.8914     0.121    0.5585     0.212
+  C    0.1976    -1.242    0.1293    0.9153
+  G    0.8533     0.121    -1.186     0.212
+  T    0.1976    0.5224    0.1293   -0.8493
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -43113.1980 (s.e. 155.0292)
+Unconstrained log-likelihood (without tree): -43949.6311
+Number of free parameters (#branches + #model parameters): 49
+Akaike information criterion (AIC) score: 86324.3959
+Corrected Akaike information criterion (AICc) score: 86324.5601
+Bayesian information criterion (BIC) score: 86731.3759
+
+Total tree length (sum of branch lengths): 0.0089
+Sum of internal branch lengths: 0.0048 (53.6305% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Wuhan|B|NC_045512.2|2019-12' is drawn at root
+
++---Wuhan|B|NC_045512.2|2019-12
+|
+|  +--B.1|B.1|MT358705.1|2020-03-29
++--|
+|  |     +---B.1|B.1|MZ472100.1|2020-04-01
+|  |  +**|
+|  |  |  +---------B.1|B.1|OK075089.1|2021-01-08
+|  +**|
+|     +--B.1|B.1|PV612058.1|2020-04-02
+|
+|                             +--Delta|B.1.617.2|OL524349.1|2021-07-24
+|                  +----------|
+|                  |          +--Delta|B.1.617.2|OL524558.1|2021-07-26
+|  +---------------|
+|  |               |  +---------Delta|B.1.617.2|OK189634.1|2021-09-10
+|  |               +--|
+|  |                  |          +-----------Delta|B.1.617.2|ON005388.1|2021-07-12
+|  |                  +----------|
+|  |                             +--------Delta|B.1.617.2|LC643044.1|2021-06
++**|
+   |                         +--------Alpha|B.1.1.7|MZ023129.1|2021-03-27
+   |      +------------------|
+   |      |                  |     +--Alpha|B.1.1.7|OY916467.1|2021-01-05
+   |      |                  |  +**|
+   |      |                  |  |  +--Alpha|B.1.1.7|OY942636.1|2021-01-23
+   |      |                  +**|
+   |      |                     |  +------Alpha|B.1.1.7|MZ233978.1|2021-05-07
+   |      |                     +--|
+   |      |                        +------Alpha|B.1.1.7|OY953412.1|2021-03-04
+   |   +--|
+   |   |  |                                                         +--Omicron|BA.1.1|OP349650.1|2022-01-03
+   |   |  |                                                      +**|
+   |   |  |                                                      |  +--Omicron|BA.1.1|ON383275.1|2022-02-11
+   |   |  |                                                   +--|
+   |   |  |                                                   |  +---Omicron|BA.1.1|ON532287.1|2022-01-03
+   |   |  |                                                +**|
+   |   |  |                                                |  +--Omicron|BA.1.1|ON947472.1|2022-01-17
+   |   |  +------------------------------------------------|
+   |   |                                                   +--Omicron|BA.1.1|ON142791.1|2022-03-15
+   +---|
+       |                              +-----Gamma|P.1|OL522294.1|2021-06-19
+       |                           +**|
+       |                           |  +---------Gamma|P.1|OL522071.1|2021-06-24
+       |                        +--|
+       |                        |  +--Gamma|P.1|OK548698.1|2021-05-08
+       +------------------------|
+                                +------Gamma|P.1|MW990931.1|2021-03-31
+
+Tree in newick format:
+
+(Wuhan|B|NC_045512.2|2019-12:0.0001337780,(B.1|B.1|MT358705.1|2020-03-29:0.0001003312,((B.1|B.1|MZ472100.1|2020-04-01:0.0001337780,B.1|B.1|OK075089.1|2021-01-08:0.0003344907):0.0000010000,B.1|B.1|PV612058.1|2020-04-02:0.0000668860):0.0000010000):0.0000668860,(((Delta|B.1.617.2|OL524349.1|2021-07-24:0.0000334422,Delta|B.1.617.2|OL524558.1|2021-07-26:0.0000668860):0.0003676575,(Delta|B.1.617.2|OK189634.1|2021-09-10:0.0003427635,(Delta|B.1.617.2|ON005388.1|2021-07-12:0.0004014071,Delta|B.1.617.2|LC643044.1|2021-06:0.0003010348):0.0003838583):0.0000720276):0.0005395514,(((Alpha|B.1.1.7|MZ023129.1|2021-03-27:0.0003010348,((Alpha|B.1.1.7|OY916467.1|2021-01-05:0.0000668860,Alpha|B.1.1.7|OY942636.1|2021-01-23:0.0000334422):0.0000010000,(Alpha|B.1.1.7|MZ233978.1|2021-05-07:0.0002341275,Alpha|B.1.1.7|OY953412.1|2021-03-04:0.0002341275):0.0000334422):0.0000010000):0.0006377902,((((Omicron|BA.1.1|OP349650.1|2022-01-03:0.0001250015,Omicron|BA.1.1|ON383275.1|2022-02-11:0.0001003312):0.0000010000,Omicron|BA.1.1|ON532287.1|2022-01-03:0.0001337780):0.0000418354,Omicron|BA.1.1|ON947472.1|2022-01-17:0.0000334422):0.0000010000,Omicron|BA.1.1|ON142791.1|2022-03-15:0.0001003312):0.0016083586):0.0000334422,(((Gamma|P.1|OL522294.1|2021-06-19:0.0002006762,Gamma|P.1|OL522071.1|2021-06-24:0.0003344907):0.0000010000,Gamma|P.1|OK548698.1|2021-05-08:0.0001003312):0.0000334422,Gamma|P.1|MW990931.1|2021-03-31:0.0002341275):0.0008354669):0.0001345360):0.0000010000);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/tree.treefile -m "HKY{4.31802}+F{0.299454,0.183329,0.195985,0.321232}" --length 29903
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s data/sars-cov-2.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s data/sars-cov-2.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Nov 16 19:32:15 2026
+Total CPU time used: 1.02909 seconds (0h:0m:1s)
+Total wall-clock time used: 1.0337 seconds (0h:0m:1s)
+

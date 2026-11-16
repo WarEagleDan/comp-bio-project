@@ -1,0 +1,17 @@
+[1mdiff --git a/pixi.toml b/pixi.toml[m
+[1mindex 0b4bad9..05a70ec 100644[m
+[1m--- a/pixi.toml[m
+[1m+++ b/pixi.toml[m
+[36m@@ -1,6 +1,6 @@[m
+ [workspace][m
+ authors = ["WarEagleDan <Dou0001@auburn.edu>"][m
+[31m-channels = ["conda-forge"][m
+[32m+[m[32mchannels = ["conda-forge", "bioconda"][m
+ name = "comp-bio-project"[m
+ platforms = ["linux-64"][m
+ version = "0.1.0"[m
+[36m@@ -13,3 +13,4 @@[m [mmarimo = ">=0.25.1,<0.26"[m
+ numpy = ">=2.5.5,<3"[m
+ scipy = ">=1.18.1,<2"[m
+ matplotlib = ">=3.11.2,<4"[m
+[32m+[m[32miqtree = ">=3.1.4,<4"[m
